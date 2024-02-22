@@ -16,3 +16,51 @@ code {
 h2{
   color: crimson;
 }
+
+button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1.5px solid #ff004f;
+}
+
+button::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: .5s;
+  z-index: -1;
+}
+
+button:hover:after{
+  background: #ff004f;
+  width: 100%;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button #up,
+button #down{
+  font-size: 30px;
+}
+
+ul{
+  width: 150px;
+  border: .8px solid black;
+  padding: 15px 15px 0;
+  list-style: none;
+}
+
+ul li{
+  margin: 20px 0;
+  border-bottom: 1px solid crimson;
+  padding: 5px 20px;
+}
