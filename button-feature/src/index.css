@@ -70,3 +70,11 @@ ul li{
 ul.active{
   display: none;
 }
+
+#up-icon.active{
+  display: none;
+}
+
+#down-icon.inactive{
+  display: none;
+}
